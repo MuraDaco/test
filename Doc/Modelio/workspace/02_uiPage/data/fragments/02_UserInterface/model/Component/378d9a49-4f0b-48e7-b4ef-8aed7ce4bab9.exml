@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="uiBaseGlo" version="4">
+  <OBJECT>
+    <ID name="uiBaseGlo" mc="Standard.Component" uid="378d9a49-4f0b-48e7-b4ef-8aed7ce4bab9"/>
+    <PID name="02_uiPage" mc="Standard.Package" uid="b89bb185-4dd0-4b62-8d4c-903946b3b4a5"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[uiBaseGlo]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="uiBaseElemento" mc="Standard.Interface" uid="e760e374-1c73-4ba2-b350-fe83d72c0e4f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

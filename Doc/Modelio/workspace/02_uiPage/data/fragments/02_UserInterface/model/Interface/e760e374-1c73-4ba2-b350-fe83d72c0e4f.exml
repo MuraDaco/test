@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="uiBaseElemento" version="4">
+  <OBJECT>
+    <ID name="uiBaseElemento" mc="Standard.Interface" uid="e760e374-1c73-4ba2-b350-fe83d72c0e4f"/>
+    <PID name="uiBaseGlo" mc="Standard.Component" uid="378d9a49-4f0b-48e7-b4ef-8aed7ce4bab9"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[uiBaseElemento]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="1_InitCold" mc="Standard.Interface" uid="97d79edb-26dd-4720-a8b2-360478be9f2a"/>
+        <COMPID name="2_InitLight" mc="Standard.Interface" uid="8891d528-1532-4af3-a407-506f1a680b80"/>
+        <COMPID name="3_EventOn" mc="Standard.Interface" uid="d48de80d-e578-44be-9c3d-ad930af2565f"/>
+        <COMPID name="4_Elimina" mc="Standard.Interface" uid="c4c8af88-89b6-49ca-8484-ae66285ffe60"/>
+        <COMPID name="5_Visualizza" mc="Standard.Interface" uid="cb9c8dc2-c25d-490e-87b5-06700891eb52"/>
+        <COMPID name="6_Select" mc="Standard.Interface" uid="7514637c-51d4-4f2f-9df8-e01f1ed4d13e"/>
+        <COMPID name="7_Deselect" mc="Standard.Interface" uid="8c772845-08bf-46ae-9b44-214acdd6d92b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

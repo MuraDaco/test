@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="02_UserInterface" version="4">
+  <OBJECT>
+    <ID name="02_UserInterface" mc="Standard.AnalystProject" uid="6b7323f2-3b96-415e-b315-95a098d96c49"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[02_UserInterface]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="PropertyRoot">
+        <COMPID name="02_UserInterface" mc="Standard.PropertyContainer" uid="1fe8bd27-e5f9-408c-b7a7-c8e5163defc2"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

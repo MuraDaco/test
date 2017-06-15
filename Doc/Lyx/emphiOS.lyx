@@ -1,0 +1,525 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\maintain_unincluded_children false
+\language italian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Documentazione Progetto emphiOS
+\end_layout
+
+\begin_layout Author
+Marco ing.
+ Dau
+\end_layout
+
+\begin_layout Date
+04/05/2017
+\end_layout
+
+\begin_layout Address
+marco.ing.dau@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Premessa
+\end_layout
+
+\begin_layout Chapter
+Target
+\end_layout
+
+\begin_layout Section
+A chi è Rivolto
+\end_layout
+
+\begin_layout Standard
+Il presente lavoro (codice sorgente e documentazione) è rivolto principalmente
+ a programmatori in linguaggio C di microcontrollori ad 8bit.
+\end_layout
+
+\begin_layout Section
+Tipologia di applicazioni
+\end_layout
+
+\begin_layout Standard
+Il firmware
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+firmware
+\end_layout
+
+\end_inset
+
+ a cui la presente documentazione si riferisce è stato sviluppato pensando
+ ad applicazioni
+\begin_inset space ~
+\end_inset
+
+PLC
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+PLC
+\end_layout
+
+\end_inset
+
+, sia per la parte funzionale che per quella interfaccia; le applicazioni
+ PLC sono quelle applicazioni in cui devono essere gestite le logiche che
+ legano gli ingressi alle uscite; gli ingressi e le uscite possono essere
+ sia digitali che analogici.
+\end_layout
+
+\begin_layout Section
+Avvertenze
+\end_layout
+
+\begin_layout Standard
+Nella presente documentazione ci sono ancora molte inesattezze (dovuti in
+ parte anche alla difficoltosa sincronizzazione con il codice) e nel firmware
+ aspetti da completare ma il codice sviluppato con le sue regole e i suoi
+ modelli implementati, e qui descritti, già permette uno sviluppo modulare
+ di una applicazione per microcontrollori 8-bit ed era questo l'obiettivo
+ base di questo lavoro.
+ Alcuni concetti o termini di informatica specie nell'ambito della programmazion
+e ad oggetti nel tentativo di portare questa tecnica allo sviluppo di applicazio
+ni per microcontrollori 8-bit usando il linguaggio C sono stati, forse,
+ un po' abusati, quindi se qualcuno ritene che siano stati usati impropriamente
+ è pregato di farmelo notare (la mia mail è “md120308 at gmail dot com”),
+ ringrazio in anticipo tutti coloro che mi faranno questa cortesia.
+ Nel caso qualche lettore gradisca un maggiore dettaglio di alcune parti
+ della presente documentazione sarò ben lieto di esaudirne le richieste,
+ stessa cosa per il firmware.
+ In ultimo desidero precisare che tutte le critiche positive e negative
+ sulla presente documentazione e in generale sull'intero lavoro (firmware
+ e documentazione) saranno bene accette.
+\end_layout
+
+\begin_layout Chapter
+Introduzione
+\end_layout
+
+\begin_layout Section
+Caratteristiche
+\end_layout
+
+\begin_layout Standard
+Il codice è stato sviluppato pensando alle seguenti caratteristiche 
+\end_layout
+
+\begin_layout Description
+Ottimizzazione
+\begin_inset space ~
+\end_inset
+
+del
+\begin_inset space ~
+\end_inset
+
+codice: minimizzare l'utilizzo di memoria ROM e RAM
+\end_layout
+
+\begin_layout Description
+Modularità: sviluppare nuove funzionalità senza dover modificare il codice
+ di altri moduli.
+ 
+\end_layout
+
+\begin_layout Section
+Modularità e suoi vantaggi
+\end_layout
+
+\begin_layout Standard
+La seconda caratteristica ha numerosi vantaggi, ben noti a coloro che usano
+ il paradigma della programmazione orientata agli oggetti: 
+\end_layout
+
+\begin_layout Itemize
+Facilita il debug e quindi in generale anche la manutenzione del codice
+\end_layout
+
+\begin_layout Itemize
+Facilita l'introduzione di nuove funzionalità minimizzando problemi di interfere
+nza con altre parti del codice
+\end_layout
+
+\begin_layout Itemize
+Permette un più veloce e “pulito” riutilizzo del codice in altri progetti
+ anche con differenti piattaforme HW e/o SW
+\end_layout
+
+\begin_layout Itemize
+Permette di identificare chiaramente le parti del codice indipendenti dalla
+ piattaforma su cui far girare il fw (notare che la piattaforma può essere
+ HW o SW)
+\end_layout
+
+\begin_layout Itemize
+Possibilità di sviluppare progetti coinvolgendo più persone o gruppi e in
+ ultima istanza creare in rete una repository di moduli e configurazioni
+ fw/hw
+\end_layout
+
+\begin_layout Section
+Schemi e moduli ricorrenti in applicazioni PLC
+\end_layout
+
+\begin_layout Standard
+In applicazioni PLC (ma non solo!) ci sono schemi e moduli spesso ricorrenti,
+ di seguito i principali che sono stati implementati nel codice sorgente
+ a cui la presente documentazione si riferisce:
+\end_layout
+
+\begin_layout Itemize
+Schemi
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+produttore-consumatore: controllo del verificarsi di particolari situazioni
+ o condizioni, chiamate anche eventi (Produzione evento), e successiva esecuzion
+e di azioni associate a tali eventi (Consumazione evento)
+\end_layout
+
+\begin_layout Itemize
+timers di sistema: quasi sempre i moduli hanno bisogno di eseguire delle
+ procedure a particolari intervalli di tempo; ad esempio gestione dell'anti-rimb
+alzo nella lettura dei tasti oppure la gestione del lampeggio nei moduli
+ interfaccia utente
+\end_layout
+
+\begin_layout Itemize
+funzioni di init: quasi sempre i moduli hanno bisogno di una inizializzazione
+ che deve essere eseguita alla partenza del microcontrollore
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Moduli
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+gestione interfaccia utente (componenti base: lista di voci, modifica valori)
+\end_layout
+
+\begin_layout Itemize
+gestione parametri
+\end_layout
+
+\begin_layout Itemize
+multilingua
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Descrizione piattaforme usate
+\end_layout
+
+\begin_layout Standard
+l codice sorgente a cui è associata la presente documentazione è stato implement
+ato su due diverse piattaforme una HW ed una SW
+\end_layout
+
+\begin_layout Itemize
+piattaforma HW: EasyPicV7 di MikroElektronica
+\end_layout
+
+\begin_layout Itemize
+piattaforma SW: Windows7 Microsoft
+\end_layout
+
+\begin_layout Standard
+Si vuole far notare che ci sono dei vantaggi nel poter eseguire il fw su
+ piattaforme SW come Windows, Linux oppure OS X
+\end_layout
+
+\begin_layout Itemize
+allestire debug automatici del fw (naturalmente sono esclusi i driver, questi
+ possono essere testati solo sulle piattaforme per cui sono scritti)
+\end_layout
+
+\begin_layout Itemize
+rendere il progetto FW (ad esclusione dei driver) indipendente dal progetto
+ HW a cui è associato
+\end_layout
+
+\begin_layout Part
+Descrizione del codice
+\end_layout
+
+\begin_layout Chapter
+Files e Nomenclatura
+\end_layout
+
+\begin_layout Standard
+Tutti i nomi dei file eccetto il file main.c rispettano la seguente codifica:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\series bold
+\size large
+\emph on
+[hw_|ui_][kr|ui|fn|rs2|ms]<Nome del modulo>[Def|Tbl|Glo|Edt].[c|h]
+\end_layout
+
+\begin_layout Section
+Prefissi
+\end_layout
+
+\begin_layout Standard
+Notare che ci sono due livelli di prefissi la prima termina con un underscore
+ "_"; di seguito il significato e l'utilizzo di questi prefissi 
+\end_layout
+
+\begin_layout Subsection
+Prefissi di primo livello
+\end_layout
+
+\begin_layout Description
+hw_: evidenziare un file in cui il codice gestisce istruzioni dipendenti
+ dalla piattaforma, sono i file che costituiscono i driver del sistema,
+ tipicamente fanno parte dei moduli delle risorse (moduli rs2)
+\end_layout
+
+\begin_layout Description
+ui_: evidenziare il file header che contengono variabili globali di un modulo
+ che si desidera siano presenti nella lista dei parametri che si possono
+ modificare via interfaccia utente; i file con questo primo livello di prefisso
+ sono sempre i file con postfisso “Edt” e quindi sono sempre file header
+\end_layout
+
+\begin_layout Subsection
+Prefissi di secondo livello
+\end_layout
+
+\begin_layout Standard
+Questo livello di prefisso identifica anche il gruppo di moduli.
+ Di seguito la loro descrizione:
+\end_layout
+
+\begin_layout Description
+kr: (sta per kernel) sono i moduli base di un progetto che non possono mai
+ mancare; ci sono due moduli principali e ciascuno offre dei “servizi” agli
+ altri moduli del firmware:
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+krProcess: è lo schedulatore dei processi; nel codice i processi sono rappresent
+ati dalle righe della matrice dei processi e sono caratterizzati da una
+ funzione che genera eventi (Produce un evento) e da una funzione che processa
+ gli eventi (Consuma un evento)
+\end_layout
+
+\begin_layout Description
+krTimer: gestisce le funzioni evento associate alle variabili timer di cui
+ necessitano i vari moduli del firmware
+\end_layout
+
+\end_deeper
+\begin_layout Description
+ui: (sta per user interface) sono i moduli che si occupano di gestire l'interfac
+cia utente;
+\end_layout
+
+\begin_layout Description
+fn: (sta per funzionale) sono i moduli funzionali dove è presente il codice
+ che gestisce la logica tra gli ingressi e le uscite;
+\end_layout
+
+\begin_layout Description
+rs2: (sta per RiSorse, togliendo le vocali si ha rsrs da cui rs2) sono i
+ moduli che forniscono agli altri moduli l'interfaccia con l'hardware, tipicamen
+te al proprio interno contengo i driver del sistema
+\end_layout
+
+\begin_layout Description
+ms: (sta per miscellaneous), sono moduli generici che non apparetngono a
+ nessuna delle precedenti categorie
+\end_layout
+
+\begin_layout Section
+Postfissi
+\end_layout
+
+\begin_layout Description
+Def: (è un postfisso e sta per Definition) sono quei file in cui sono “fisicamen
+te” definite le variabili globali dei moduli; questi file sono sempre con
+ estensione “.c” non hanno il nome dei moduli ma solo il prefisso di secondo
+ livello.
+\end_layout
+
+\begin_layout Description
+Tbl: (è un postfisso e sta per Table) sono quei file in cui sono defnite
+ Tabelle statiche necessarie per la gestione delle dipendenze indirette
+ come ad esempio le funzioni timer dei moduli o gli eventi provenienti dai
+ tasti, per maggiori dettagli si veda il paragrafo <2.4.1.1 Dipendenze Dirette
+ e Indirette>;
+\end_layout
+
+\begin_layout Description
+Glo: (è un postfisso e sta per Global) è un file header in cui sono presenti
+ strutture e variabili condivisi da più moduli, di solito quando venfgono
+ condivise le strutture e/o le variabili c'è sempre un modulo di riferimento
+ da cui il file prende anche il nome
+\end_layout
+
+\begin_layout Description
+Edt: (è un postfisso e sta per Editable) sono quei file in cui sono definite
+ le variabili globali di un modulo con le loro proprietà di visualizzazione
+ e di modifica che si vuole poter modificare via interfaccia utente.
+\end_layout
+
+\begin_layout Part
+Possibili sviluppi
+\end_layout
+
+\begin_layout Chapter
+Progetti e sviluppi futuri
+\end_layout
+
+\begin_layout Standard
+Possibili sviluppi futuri del presente lavoro vertono su tre linee, una
+ rivolta all'ambiente di sviluppo l'altra rivolta alla riutilizzabilità
+ e condivisione del codice e l'ultima relativa ad un progetto PLC openSource:
+\end_layout
+
+\begin_layout Itemize
+permettere lo sviluppo rapido di appicazioni per microcontrollori 8-bit,
+ allo stesso modo delle applicazioni Windows/OS X/Linux
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+creare interfaccia utente con tool grafici senza modificare manualmente
+ il codice nello stile degli ambienti di sviluppo come Delphi, QtCreator
+ / QtDesign, VisualStudio oppure degli ambienti di sviluppo PLC per la programma
+zione delle interfacce utente
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+creare in rete una repository per la condivisione di moduli relativi alle
+ più disparate applicazioni e necessità, e driver relativi alle più svariate
+ configurazioni di “microcontrollore + piattaforma”; per quest'ultimo aspetto
+ già si può trovare qualcosa in rete
+\end_layout
+
+\begin_layout Itemize
+sviluppare applicazioni nello stile del linguaggio LADDER ma sfruttando
+ anche moduli più complessi che permettano di uscire dal paradigma procedurale
+ che quando l'applicazione è leggermente più articolata crea difficoltà
+ di manutenzione e debug; si veda in rete il progetto OpenPLC (progetto
+ open) e CodeFlow (progetto proprietario) Notare che i primi due punti sono
+ tra loro strettamente legati.
+\end_layout
+
+\begin_layout Chapter
+Progetti simili o complementari
+\end_layout
+
+\begin_layout Standard
+FlowCode
+\end_layout
+
+\begin_layout Standard
+FemtoOS
+\end_layout
+
+\begin_layout Standard
+OpenPLC
+\end_layout
+
+\begin_layout Standard
+Librerie per vari microcontrollori per la gestione dei registri
+\end_layout
+
+\begin_layout Standard
+EICASLAB
+\end_layout
+
+\end_body
+\end_document

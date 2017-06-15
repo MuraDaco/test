@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="02_UserInterface" version="4">
+  <OBJECT>
+    <ID name="02_UserInterface" mc="Standard.Project" uid="50e110e7-89af-4322-a8dc-e319a5afdcca"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[02_UserInterface]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DiagramRoot">
+        <COMPID name="02_UserInterface" mc="Standard.DiagramSet" uid="2c8db081-6b5c-4a32-aeb3-1f3065aa6979"/>
+      </COMP>
+      <COMP relation="Model">
+        <COMPID name="02_userinterface" mc="Standard.Package" uid="b89bb185-4dd0-4b62-8d4c-903946b3b4a5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

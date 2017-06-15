@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="01_Kernel" version="4">
+  <OBJECT>
+    <ID name="01_Kernel" mc="Standard.DiagramSet" uid="f7d10ebe-8e7e-4991-96cd-9da4126949b7"/>
+    <PID name="01_Kernel" mc="Standard.Project" uid="614d994d-a3a8-422e-986c-bf9d99e01b09"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[01_Kernel]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

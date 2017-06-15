@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="uiBase" version="4">
+  <OBJECT>
+    <ID name="uiBase" mc="Standard.Component" uid="a45f4794-a898-4801-8465-c6652385d6ab"/>
+    <PID name="02_uiPage" mc="Standard.Package" uid="b89bb185-4dd0-4b62-8d4c-903946b3b4a5"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[uiBase]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="InternalStructure">
+        <OBJECT>
+          <ID name="Port" mc="Standard.Port" uid="c865a413-3c58-4c7c-82ae-80c631ee403f"/>
+          <ATTRIBUTES>
+            <ATT name="IsBehavior">false</ATT>
+            <ATT name="IsService">true</ATT>
+            <ATT name="IsConjugated">false</ATT>
+            <ATT name="Direction">None</ATT>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[Port]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Provided">
+              <OBJECT>
+                <ID name="ProvidedInterface" mc="Standard.ProvidedInterface" uid="0702a589-cdc1-4fcc-9b19-eee3b2add7e6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[ProvidedInterface]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ProvidedElement">
+                    <ID name="uiBaseElemento" mc="Standard.Interface" uid="e760e374-1c73-4ba2-b350-fe83d72c0e4f"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Base">
+              <ID name="uiBase" mc="Standard.Component" uid="a45f4794-a898-4801-8465-c6652385d6ab"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="uiBaseElementoInst" mc="Standard.BindableInstance" uid="a3dbc6ee-3cbe-42a3-9955-1b9ff69972d2"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[n_TipoModuli]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[uiBaseElementoInst]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <ID name="uiBaseElemento" mc="Standard.Interface" uid="e760e374-1c73-4ba2-b350-fe83d72c0e4f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Port1" mc="Standard.Port" uid="34676ef0-eda4-4eef-a930-f374b0149a80"/>
+          <ATTRIBUTES>
+            <ATT name="IsBehavior">false</ATT>
+            <ATT name="IsService">true</ATT>
+            <ATT name="IsConjugated">false</ATT>
+            <ATT name="Direction">None</ATT>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[Port1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Required">
+              <OBJECT>
+                <ID name="RequiredInterface" mc="Standard.RequiredInterface" uid="1bcff237-f56f-4ae7-9042-b52018d42488"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[RequiredInterface]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="RequiredElement">
+                    <ID name="1_InitCold" mc="Standard.Interface" uid="97d79edb-26dd-4720-a8b2-360478be9f2a"/>
+                    <ID name="2_InitLight" mc="Standard.Interface" uid="8891d528-1532-4af3-a407-506f1a680b80"/>
+                    <ID name="3_EventOn" mc="Standard.Interface" uid="d48de80d-e578-44be-9c3d-ad930af2565f"/>
+                    <ID name="4_Elimina" mc="Standard.Interface" uid="c4c8af88-89b6-49ca-8484-ae66285ffe60"/>
+                    <ID name="5_Visualizza" mc="Standard.Interface" uid="cb9c8dc2-c25d-490e-87b5-06700891eb52"/>
+                    <ID name="6_Select" mc="Standard.Interface" uid="7514637c-51d4-4f2f-9df8-e01f1ed4d13e"/>
+                    <ID name="7_Deselect" mc="Standard.Interface" uid="8c772845-08bf-46ae-9b44-214acdd6d92b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Realized">
+        <OBJECT>
+          <ID name="InterfaceRealization" mc="Standard.InterfaceRealization" uid="bfa7238f-dd79-4fea-addb-c7769c543662"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[InterfaceRealization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Implemented">
+              <ID name="uiBaseElemento" mc="Standard.Interface" uid="e760e374-1c73-4ba2-b350-fe83d72c0e4f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

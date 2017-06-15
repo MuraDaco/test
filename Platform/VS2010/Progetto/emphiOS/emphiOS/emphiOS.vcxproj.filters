@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="File di origine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="File di risorse">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver">
+      <UniqueIdentifier>{83b255c1-cb0c-4d3b-9a5c-801c0e52d1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Firmware">
+      <UniqueIdentifier>{9d7fa75f-8518-4f5d-ab42-ce3ddfb249ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{5060b2a7-a6ae-4b34-a091-cd113dc98ebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Driver">
+      <UniqueIdentifier>{09e22d07-1c6b-4579-a777-c117fd2dc949}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="app.ico">
+      <Filter>File di risorse</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="emphiOS.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Form2.cpp">
+      <Filter>File di intestazione</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\fnDef.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\krEvent.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\krEventTbl.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\krProcess.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\krProcessTbl.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\krTimer.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\krTimerTbl.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\msDef.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\msTest.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\rs2Buttons.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\rs2Lcd.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\uiApplication.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\uiBase.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\uiDef.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\uiLbox.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\uiPage.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\uiPar.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\uiStr.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Firmware\uiVar.cpp">
+      <Filter>Firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Driver\hw_krInterrupt.cpp">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Driver\hw_msMicro.cpp">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Driver\hw_rs2Buttons.cpp">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Driver\hw_rs2Lcd.cpp">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Driver\dntDef.cpp">
+      <Filter>Driver</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Form1.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Form2.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Driver\dntButtonsGlo.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Driver\dntLcdGlo.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\ConfigEasyPicV7.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\fnThermostatGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\krEvent.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\krEventGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\krProcess.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\krProcessGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\krTimer.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\krTimerGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\msTest.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\rs2Buttons.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\rs2ButtonsGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\rs2Lcd.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\ui_fnThermostatDsp.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\ui_fnThermostatEdt.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\ui_GeneralEdt.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\ui_rs2ButtonsDsp.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiApplicationGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiBase.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiBaseGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiLbox.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiLboxGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiPage.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiPageGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiPar.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiParDisplayGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiParGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiStr.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiStrGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiVar.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Firmware\uiVarGlo.h">
+      <Filter>Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Include\Driver\hw_krInterrupt.h">
+      <Filter>Include\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Include\Driver\hw_msMicro.h">
+      <Filter>Include\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Include\Driver\hw_rs2Buttons.h">
+      <Filter>Include\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Include\Driver\hw_rs2Lcd.h">
+      <Filter>Include\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Include\Driver\msPlatform.h">
+      <Filter>Include\Driver</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>File di risorse</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resX">
+      <Filter>File di risorse</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <Filter>File di risorse</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="01_Kernel" version="4">
+  <OBJECT>
+    <ID name="01_Kernel" mc="Standard.AnalystProject" uid="2ed0e9b3-6bc3-4c45-8232-7ac40c259db5"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[01_Kernel]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="PropertyRoot">
+        <COMPID name="01_Kernel" mc="Standard.PropertyContainer" uid="328aea76-0b5e-4754-8954-8438c583b583"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

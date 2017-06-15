@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="6_Select" version="4">
+  <OBJECT>
+    <ID name="6_Select" mc="Standard.Interface" uid="7514637c-51d4-4f2f-9df8-e01f1ed4d13e"/>
+    <PID name="uiBaseElemento" mc="Standard.Interface" uid="e760e374-1c73-4ba2-b350-fe83d72c0e4f"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[6_Select]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
