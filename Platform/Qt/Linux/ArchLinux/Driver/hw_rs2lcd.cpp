@@ -128,12 +128,22 @@
 //	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // SECTION - VARIABLE DEFINITION
 
+extern unsigned char hw_lcdStato;
+extern unsigned char hw_lcdDisplayCursorShift;
+extern unsigned char hw_lcdEntryMode;
+
 unsigned char hw_lcdStato;
 unsigned char hw_lcdDisplayCursorShift;
 unsigned char hw_lcdEntryMode;
 
+extern unsigned char Row;
+extern unsigned char Col;
+
 unsigned char Row;
 unsigned char Col;
+
+extern bool hw_lcdChanged;
+bool hw_lcdChanged;
 
 
 // SECTION END
@@ -184,12 +194,52 @@ void hw_LcdInit (void)
     lcd_string[3][LCD_COLUMN] = 0;
     lcd_string[4][LCD_COLUMN] = 0;
 
+    hw_lcdChanged = true;
+
 }
+
+
+void hw_LcdRefresh (void) {
+
+    // unsigned char i;
+    // for (i=0; i<LCD_ROW; i++)
+    // {
+    // 	et024006_PrintString(lcd_string[i],
+    // 	//(const unsigned char*) &FONT6x8,
+    // 	(const unsigned char*) &FONT8x16,
+    // 	20, 70 + 20*i,
+    // 	WHITE, BLACK);
+    // }
+
+    hw_lcdChanged = false;
+
+
+}
+
+
+
+void hw_LcdClear (void)
+
+{
+    unsigned char i, j;
+
+    for(i=0;i<LCD_ROW;i++)
+    {
+        for(j=0;j<LCD_COLUMN;j++)
+        {
+            lcd_string[i][j] = ' ';
+        }
+    }
+    hw_lcdChanged = true;
+}
+
+
+
 
 
 void hw_LcdIncCoord (void)
 {
-    char ch_box;
+    unsigned char ch_box;
 
     ch_box = LCD_COLUMN*(Row) + Col;
 
@@ -214,10 +264,12 @@ void hw_LcdSetPosition(unsigned char row, unsigned char column)
 
 void hw_LcdCh(char carattere)
 {
-    lcd_string[Row][Col] = carattere;
+    if(Col < LCD_COLUMN) {
+        lcd_string[Row][Col] = carattere;
+        hw_LcdIncCoord();
+    }
     lcd_string[Row][LCD_COLUMN] = 0;
 
-    hw_LcdIncCoord();
 }
 
 void hw_LcdDisplayReset (void)
