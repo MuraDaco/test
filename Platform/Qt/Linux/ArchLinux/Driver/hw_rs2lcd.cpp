@@ -34,7 +34,7 @@
 // ----------------------------------------------------------------------------
 // SECTION - PROJECT INCLUDE (Dependecies)
 
-#include "../../../../../Firmware/krTimerGlo.h"
+#include "../../../../../Firmware/ap/krTimerGlo.h"
 
 
 // SECTION END
