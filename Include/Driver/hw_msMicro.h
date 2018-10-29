@@ -67,6 +67,12 @@
 //	****************************************************************************
 // SECTION - LIBRTARY FUNCTION DEFINITION
 void InitMicro (void);
+void my_task(void);
+
+unsigned int registro_usbb;
+unsigned int registro_usbb1;
+unsigned int registro_usbb2;
+
 
 // SECTION END
 //	****************************************************************************

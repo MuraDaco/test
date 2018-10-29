@@ -77,7 +77,7 @@
 
 
 
-
+void			hw_driver_ButtonRefresh (void);
 void			hw_InitButtons  		(void);
 unsigned char	hw_ButtonsRead			(void);
 void			hw_ButtonsReset			(void);

@@ -80,8 +80,10 @@
 // void hw_LcdInit (void);
 // #endif
 
-void hw_LcdInit                  (void);
+void hw_LcdIntToHex					(unsigned int num, char* num_hex);
 
+void hw_LcdInit                  (void);
+void hw_LcdClear				 (void);
 void hw_LcdSetPosition				(unsigned char row, unsigned char column);
 void hw_LcdCh							(char carattere);
 void hw_LcdSetDisplayShiftLeft	(void);
