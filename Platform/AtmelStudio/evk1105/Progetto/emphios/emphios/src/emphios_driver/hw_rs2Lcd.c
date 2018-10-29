@@ -1,20 +1,25 @@
-/*
-
-   MODULE DESCRIPTION:  
-
-   AUTHOR:  Marco Ing. Dau		 																									
-
-   ****************************************************************************************************************************************************
-   * SVN-keywords: fields managed by SVN - DO NOT MODIFY 
-   *
-   *	USER who run commit:    $Author: mdau $																										
-   *	REVISION NUMBER:        $Revision: 375 $																											
-   *	LAST DATE REVISION:     $Date: 2017-02-09 19:13:40 +0100 (Thu, 09 Feb 2017) $															
-   *	LOCATION FILE:          $HeadURL: file:///C:/Users/mdau/Documents/SVN/Repository/Firmware/15101-emphil/work/hw_rs2Lcd.c $			
-   *																																						
-   ****************************************************************************************************************************************************
-
- */
+/******************************************************************************
+ *
+ *   emphiOS - RTOS, User Interface & Business Logic libriaries
+ *   Copyright (C) (2003-2018) Marco Dau
+ *
+ *   'emphiOS' is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   'emphiOS' is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *   You can contact me by the following email address
+ *   marco <d o t> ing <d o t> dau <a t> gmail <d o t> com
+ *
+ *****************************************************************************/
 
 #define _HW_LCD_C
 
