@@ -47,7 +47,7 @@ EosItemCpp {
     }
 
     Rectangle {
-        x: 100; y: 300
+        x: 200; y: 300
         Text {
             objectName: "LcdRiga1"
             text: qsTr("Riga 1 - 01234567890")
@@ -56,7 +56,7 @@ EosItemCpp {
     }
 
     Rectangle {
-        x: 150; y: 320
+        x: 200; y: 320
         Text {
             objectName: "LcdRiga2"
             text: qsTr("Riga 2 - 01234567890")
@@ -75,7 +75,7 @@ EosItemCpp {
     }
 
     Rectangle {
-        x: 250; y: 360
+        x: 200; y: 360
         Text {
             objectName: "LcdRiga4"
             text: qsTr("Riga 4 - 01234567890")

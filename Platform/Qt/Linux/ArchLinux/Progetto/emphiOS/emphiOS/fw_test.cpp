@@ -24,7 +24,6 @@ void fw_test::event_process_loop()
 {
     unsigned char key;
 
-
     // test Interrupt timer
     if(Timer[TMR_SECOND] == 0) {
         qDebug() << "Timer TMR_SECOND scaduto!!!! - Adesso lo ricarico!";

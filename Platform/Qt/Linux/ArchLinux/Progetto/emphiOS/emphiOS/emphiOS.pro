@@ -15,25 +15,27 @@ SOURCES += main.cpp \
     ../../../Driver/hw_krInterrupt.cpp \
     ../../../Driver/hw_msMicro.cpp \
     ../../../Driver/hw_rs2Buttons.cpp \
-    ../../../../../../../Firmware/krTimer.cpp \
-    ../../../../../../../Firmware/msDef.cpp \
-    ../../../../../../../Firmware/fnDef.cpp \
-    ../../../../../../../Firmware/krEvent.cpp \
-    ../../../../../../../Firmware/krEventTbl.cpp \
-    ../../../../../../../Firmware/krProcess.cpp \
-    ../../../../../../../Firmware/krProcessTbl.cpp \
-    ../../../../../../../Firmware/krTimerTbl.cpp \
-    ../../../../../../../Firmware/msTest.cpp \
-    ../../../../../../../Firmware/rs2Buttons.cpp \
-    ../../../../../../../Firmware/rs2Lcd.cpp \
-    ../../../../../../../Firmware/uiApplication.cpp \
-    ../../../../../../../Firmware/uiBase.cpp \
-    ../../../../../../../Firmware/uiDef.cpp \
-    ../../../../../../../Firmware/uiLbox.cpp \
-    ../../../../../../../Firmware/uiPage.cpp \
-    ../../../../../../../Firmware/uiPar.cpp \
-    ../../../../../../../Firmware/uiStr.cpp \
-    ../../../../../../../Firmware/uiVar.cpp
+    ../../../../../../../Firmware/ap/fnDef.cpp \
+    ../../../../../../../Firmware/ap/krEventTbl.cpp \
+    ../../../../../../../Firmware/ap/krProcessTbl.cpp \
+    ../../../../../../../Firmware/ap/krTimerTbl.cpp \
+    ../../../../../../../Firmware/ap/uiAppButton.cpp \
+    ../../../../../../../Firmware/ap/uiApplication.cpp \
+    ../../../../../../../Firmware/ap/uiDef.cpp \
+    ../../../../../../../Firmware/kr/krEvent.cpp \
+    ../../../../../../../Firmware/kr/krProcess.cpp \
+    ../../../../../../../Firmware/kr/krTimer.cpp \
+    ../../../../../../../Firmware/rs/rs2Buttons.cpp \
+    ../../../../../../../Firmware/rs/rs2Lcd.cpp \
+    ../../../../../../../Firmware/ui/uiBase.cpp \
+    ../../../../../../../Firmware/ui/uiButton.cpp \
+    ../../../../../../../Firmware/ui/uiLbox.cpp \
+    ../../../../../../../Firmware/ui/uiPage.cpp \
+    ../../../../../../../Firmware/ui/uiPar.cpp \
+    ../../../../../../../Firmware/ui/uiStr.cpp \
+    ../../../../../../../Firmware/ui/uiVar.cpp \
+    ../../../../../../../Firmware/uy/msDef.cpp \
+    ../../../../../../../Firmware/uy/msTest.cpp
 
 RESOURCES += qml.qrc
 
@@ -57,33 +59,47 @@ HEADERS += \
     ../../../../../../../Include/Driver/hw_krInterrupt.h \
     ../../../../../../../Include/Driver/hw_msMicro.h \
     ../../../../../../../Include/Driver/hw_rs2Buttons.h \
-    ../../../../../../../Firmware/krTimerGlo.h \
-    ../../../../../../../Firmware/krTimer.h \
-    ../../../../../../../Firmware/krProcess.h \
-    ../../../../../../../Firmware/rs2ButtonsGlo.h \
-    ../../../../../../../Firmware/rs2Buttons.h \
-    ../../../../../../../Firmware/uiLbox.h \
-    ../../../../../../../Firmware/uiLboxGlo.h \
-    ../../../../../../../Firmware/uiPage.h \
-    ../../../../../../../Firmware/uiPageGlo.h \
-    ../../../../../../../Firmware/uiPar.h \
-    ../../../../../../../Firmware/uiParDisplayGlo.h \
-    ../../../../../../../Firmware/uiParGlo.h \
-    ../../../../../../../Firmware/uiApplicationGlo.h \
-    ../../../../../../../Firmware/ui_GeneralEdt.h \
-    ../../../../../../../Firmware/uiVar.h \
-    ../../../../../../../Firmware/uiVarGlo.h \
-    ../../../../../../../Firmware/ConfigEasyPicV7.h \
-    ../../../../../../../Firmware/fnThermostatGlo.h \
-    ../../../../../../../Firmware/krEvent.h \
-    ../../../../../../../Firmware/krEventGlo.h \
-    ../../../../../../../Firmware/krProcessGlo.h \
-    ../../../../../../../Firmware/msTest.h \
-    ../../../../../../../Firmware/rs2Lcd.h \
-    ../../../../../../../Firmware/ui_fnThermostatDsp.h \
-    ../../../../../../../Firmware/ui_fnThermostatEdt.h \
-    ../../../../../../../Firmware/ui_rs2ButtonsDsp.h \
-    ../../../../../../../Firmware/uiBase.h \
-    ../../../../../../../Firmware/uiBaseGlo.h \
-    ../../../../../../../Firmware/uiStr.h \
-    ../../../../../../../Firmware/uiStrGlo.h
+    ../../../../../../../Include/driver/msPlatform.h \
+    ../../../../../../../Include/driver/hw_krInterrupt.h \
+    ../../../../../../../Include/driver/hw_msMicro.h \
+    ../../../../../../../Include/driver/hw_rs2Buttons.h \
+    ../../../../../../../Include/driver/hw_rs2Lcd.h \
+    ../../../../../../../Firmware/ap/fnThermostatGlo.h \
+    ../../../../../../../Firmware/ap/krEventGlo.h \
+    ../../../../../../../Firmware/ap/krProcessGlo.h \
+    ../../../../../../../Firmware/ap/krTimerGlo.h \
+    ../../../../../../../Firmware/ap/ui_AppFatTestDsp.h \
+    ../../../../../../../Firmware/ap/ui_fnThermostatDsp.h \
+    ../../../../../../../Firmware/ap/ui_fnThermostatEdt.h \
+    ../../../../../../../Firmware/ap/ui_GeneralEdt.h \
+    ../../../../../../../Firmware/ap/ui_rs2ButtonsDsp.h \
+    ../../../../../../../Firmware/ap/uiAppButton.h \
+    ../../../../../../../Firmware/ap/uiApplicationGlo.h \
+    ../../../../../../../Firmware/cf/cfInclude.h \
+    ../../../../../../../Firmware/kr/krEvent.h \
+    ../../../../../../../Firmware/kr/krProcess.h \
+    ../../../../../../../Firmware/kr/krTimer.h \
+    ../../../../../../../Firmware/rs/rs2ADC.h \
+    ../../../../../../../Firmware/rs/rs2ADCGlo.h \
+    ../../../../../../../Firmware/rs/rs2Buttons.h \
+    ../../../../../../../Firmware/rs/rs2ButtonsGlo.h \
+    ../../../../../../../Firmware/rs/rs2Glcd.h \
+    ../../../../../../../Firmware/rs/rs2Lcd.h \
+    ../../../../../../../Firmware/rs/rs2Touch.h \
+    ../../../../../../../Firmware/rs/rs2TouchGlo.h \
+    ../../../../../../../Firmware/ui/uiBase.h \
+    ../../../../../../../Firmware/ui/uiBaseGlo.h \
+    ../../../../../../../Firmware/ui/uiButton.h \
+    ../../../../../../../Firmware/ui/uiButtonGlo.h \
+    ../../../../../../../Firmware/ui/uiLbox.h \
+    ../../../../../../../Firmware/ui/uiLboxGlo.h \
+    ../../../../../../../Firmware/ui/uiPage.h \
+    ../../../../../../../Firmware/ui/uiPageGlo.h \
+    ../../../../../../../Firmware/ui/uiPar.h \
+    ../../../../../../../Firmware/ui/uiParDisplayGlo.h \
+    ../../../../../../../Firmware/ui/uiParGlo.h \
+    ../../../../../../../Firmware/ui/uiStr.h \
+    ../../../../../../../Firmware/ui/uiStrGlo.h \
+    ../../../../../../../Firmware/ui/uiVar.h \
+    ../../../../../../../Firmware/ui/uiVarGlo.h \
+    ../../../../../../../Firmware/uy/msTest.h
