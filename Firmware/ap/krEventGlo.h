@@ -1,7 +1,7 @@
 /******************************************************************************
  *
  *   emphiOS - RTOS, User Interface & Business Logic libriaries
- *   Copyright (C) (2003-2018) Marco Dau
+ *   Copyright (C) (2016-2018) Marco Dau
  *
  *   'emphiOS' is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
