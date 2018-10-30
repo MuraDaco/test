@@ -2,9 +2,9 @@
 
 #include "eosthreadcontroller.h"
 
-#include "../../../../../../../Firmware/rs2ButtonsGlo.h"
-#include "../../../../../../../Firmware/krTimer.h"
-#include "../../../../../../../Firmware/krProcess.h"
+#include "../../../../../../../Firmware/rs/rs2ButtonsGlo.h"
+#include "../../../../../../../Firmware/kr/krTimer.h"
+#include "../../../../../../../Firmware/kr/krProcess.h"
 
 
 eosThreadController::eosThreadController()

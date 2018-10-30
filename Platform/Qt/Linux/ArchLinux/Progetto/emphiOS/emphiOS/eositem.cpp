@@ -3,7 +3,7 @@
 
 
 #include "../../../Driver/qtButtonsGlo.h"
-#include "../../../../../../../Firmware/rs2ButtonsGlo.h"
+#include "../../../../../../../Firmware/rs/rs2ButtonsGlo.h"
 
 eosItem::eosItem()
 {
