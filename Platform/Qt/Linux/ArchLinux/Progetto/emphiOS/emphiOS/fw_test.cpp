@@ -4,8 +4,8 @@
 
 #include "../../../../../../../Include/Driver/hw_rs2Lcd.h"
 #include "../../../../../../../Include/Driver/hw_rs2Buttons.h"
-#include "../../../../../../../Firmware/krTimerGlo.h"
-#include "../../../../../../../Firmware/rs2ButtonsGlo.h"
+#include "../../../../../../../Firmware/ap/krTimerGlo.h"
+#include "../../../../../../../Firmware/rs/rs2ButtonsGlo.h"
 
 
 fw_test::fw_test(QObject *parent) : QObject(parent)

@@ -52,3 +52,5 @@ Mkfile.old
 dkms.conf
 *.DS_Store
 *Debug*
+Platform/Qt/Linux/ArchLinux/Progetto/emphiOS/build-emphiOS*
+Platform/Qt/Linux/ArchLinux/Progetto/emphiOS/emphiOS/emphiOS.pro.user

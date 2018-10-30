@@ -10,11 +10,11 @@ SOURCES += main.cpp \
     eosthreadworker.cpp \
     eosthreadcontroller.cpp \
     fw_test.cpp \
-    ../../../Driver/hw_rs2lcd.cpp \
-    ../../../Driver/qtdef.cpp \
     ../../../Driver/hw_krInterrupt.cpp \
     ../../../Driver/hw_msMicro.cpp \
     ../../../Driver/hw_rs2Buttons.cpp \
+    ../../../Driver/hw_rs2lcd.cpp \
+    ../../../Driver/qtdef.cpp \
     ../../../../../../../Firmware/ap/fnDef.cpp \
     ../../../../../../../Firmware/ap/krEventTbl.cpp \
     ../../../../../../../Firmware/ap/krProcessTbl.cpp \
@@ -102,4 +102,7 @@ HEADERS += \
     ../../../../../../../Firmware/ui/uiStrGlo.h \
     ../../../../../../../Firmware/ui/uiVar.h \
     ../../../../../../../Firmware/ui/uiVarGlo.h \
-    ../../../../../../../Firmware/uy/msTest.h
+    ../../../../../../../Firmware/uy/msTest.h \
+
+DISTFILES += \
+    deployment.pri

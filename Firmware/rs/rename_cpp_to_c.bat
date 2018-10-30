@@ -1,1 +1,0 @@
-rename *.cpp *.c
