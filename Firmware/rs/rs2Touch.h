@@ -1,3 +1,26 @@
+/******************************************************************************
+ *
+ *   emphiOS - RTOS, User Interface & Business Logic libriaries
+ *   Copyright (C) (2016-2018) Marco Dau
+ *
+ *   'emphiOS' is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   'emphiOS' is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *   You can contact me by the following email address
+ *   marco <d o t> ing <d o t> dau <a t> gmail <d o t> com
+ *
+ *****************************************************************************/
+
 /*
    touch.h
    
@@ -120,24 +143,6 @@
 	
    
 */
-
-/*
-
-   MODULE DESCRIPTION:  
-
-   AUTHOR:  Marco Ing. Dau		 																									
-
-   ****************************************************************************************************************************************************
-   * SVN-keywords: fields managed by SVN - DO NOT MODIFY 
-   *
-   *	USER who run commit:    $Author: Administrator $																										
-   *	REVISION NUMBER:        $Revision: 357 $																											
-   *	LAST DATE REVISION:     $Date: 2016-05-05 19:38:30 +0200 (Thu, 05 May 2016) $															
-   *	LOCATION FILE:          $HeadURL: file:///C:/Users/mdau/Documents/SVN/Repository/Firmware/15101-emphil/work/rs2Touch.h $			
-   *																																						
-   ****************************************************************************************************************************************************
-
- */
 
 // ----------------------------------------------------------------------------
 // SECTION - SYSTEM INCLUDE

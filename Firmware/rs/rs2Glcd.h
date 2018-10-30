@@ -1,47 +1,25 @@
-/*
-
-   glcd.c
-   
-   Description / Descrizione:
-   Driver to handle the LCD graphic provided with the development board EasyPic V7
-   Driver per gestire l'lcd grafico fornito con la scheda di sviluppo EasyPic V7 
-   
-   Documentation / Documentazione
-   datasheet pdf file of MOdule no: WDG0151-TMI-V#N00 by http://www.winstar.com.tw
-	to download datasheet
-	http://www.mikroe.com/support/index.php?/Knowledgebase/Article/View/803/121/winstar-wdg0151-tmi-vn00-128x64-glcd-display
-   
-   Author:
-   Marco Dau
-
-   Creation Date:
-   Tuesday, 17 March 2015
-   
-   Update:	
-
-*/
-
-
-
-
-
-/*
-
-   MODULE DESCRIPTION:  
-
-   AUTHOR:  Marco Ing. Dau		 																									
-
-   ****************************************************************************************************************************************************
-   * SVN-keywords: fields managed by SVN - DO NOT MODIFY 
-   *
-   *	USER who run commit:    $Author: Administrator $																										
-   *	REVISION NUMBER:        $Revision: 306 $																											
-   *	LAST DATE REVISION:     $Date: 2015-12-07 19:35:58 +0100 (Mon, 07 Dec 2015) $															
-   *	LOCATION FILE:          $HeadURL: file:///C:/Users/mdau/Documents/SVN/Repository/Firmware/15101-emphil/work/rs2Glcd.h $			
-   *																																						
-   ****************************************************************************************************************************************************
-
- */
+/******************************************************************************
+ *
+ *   emphiOS - RTOS, User Interface & Business Logic libriaries
+ *   Copyright (C) (2016-2018) Marco Dau
+ *
+ *   'emphiOS' is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   'emphiOS' is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *   You can contact me by the following email address
+ *   marco <d o t> ing <d o t> dau <a t> gmail <d o t> com
+ *
+ *****************************************************************************/
 
 #ifndef _GLCD_H
 #define _GLCD_H
